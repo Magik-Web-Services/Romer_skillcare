@@ -1,0 +1,359 @@
+/* css reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* default */
+
+/* width : 680px */
+:root {
+	--primary-color: #54605b;
+	--light-primary-color: #5d6964;
+	--secandary-color: #daa58e;
+	--icon-box: hsl(193.71deg 28.46% 75.88%);
+	--white-color: white;
+	--image-color: #e8e8e8;
+	--fotter-color: hsl(180deg 6.06% 87.06%);
+	--link-clor: hsl(240deg 87.34% 53.53%);
+	--black-color: black;
+	--light-color: #c9cdcc;
+	--light-black-color: hsl(0, 1%, 22%);
+	--body-color: hsl(210deg 9.09% 95.69%);
+	;
+}
+
+
+body {
+	background-color: var(--black-color);
+}
+
+.body {
+	max-width: 680px;
+	height: 100%;
+	background-color: var(--body-color);
+
+}
+
+.container {
+	margin: 0 auto;
+	background-color: var(--white-color);
+}
+
+table {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.container-con {
+	padding: 27px 17px 17px;
+	max-width: 677px;
+}
+
+/* Heading */
+
+thead {
+	margin: 0 auto;
+}
+
+thead th {
+	background-color: var(--primary-color);
+	padding: 23px 0;
+	text-align: center;
+	border-bottom: 8px solid var(--secandary-color);
+}
+
+thead th h2 {
+	color: var(--white-color);
+	font-size: 3.7rem;
+	line-height: 38px;
+}
+
+thead th p {
+	text-transform: uppercase;
+	color: var(--light-color);
+	font-weight: lighter;
+	letter-spacing: 0.06rem;
+	font-size: 0.95em;
+	font-family: 'Vollkorn', serif;
+}
+
+
+/*  top hero-section  */
+
+tbody .topHeroSec td {
+	text-align: center;
+	padding: 30px 0;
+	font-size: 1.2rem;
+}
+
+tbody .topHeroSec td p {
+	font-size: 1.35rem;
+	color: var(--light-black-color);
+	font-weight: 600;
+}
+
+/* hero-section */
+tbody .heroSec td {
+	padding: 0 50px;
+}
+
+tbody .heroSec td figure {
+	position: relative;
+	max-height: 55vh;
+	margin-bottom: 1.5rem;
+}
+
+tbody .heroSec td figure .bgHerosec {
+	position: absolute;
+	z-index: 1;
+	top: 5rem;
+	left: 3.2rem;
+	min-width: 70%;
+	max-height: 70%;
+}
+
+tbody .heroSec td figure .girl {
+	max-width: 55%;
+	position: relative;
+	z-index: 1;
+	box-shadow: 82px 0px var(--image-color);
+}
+
+tbody .heroSec td figure .boy {
+	position: absolute;
+	top: 54%;
+	z-index: 2;
+	right: 10%;
+	max-width: 30%;
+}
+
+tbody .heroSec td figure h1 {
+	position: relative;
+	bottom: 270px;
+	z-index: 3;
+	line-height: 3.5rem;
+	left: 55%;
+	width: 300px;
+	font-weight: bolder;
+	font-size: 3.7rem;
+}
+
+tbody .bottomHeroHeading td {
+	text-align: center;
+	padding: 20px 0;
+}
+
+tbody .bottomHeroHeading td h2 {
+	font-size: 2rem;
+}
+
+tbody .bottomHeroPara td {
+	text-align: center;
+	padding: 20px 0;
+}
+
+tbody .bottomHeroPara td p {
+	font-size: 1.1rem;
+}
+
+tbody .box-con td {
+	text-align: center;
+	padding: 20px 0;
+}
+
+tbody .bg-box-con{
+	position: absolute;
+}
+
+tbody .bg-box-con td .bg-box{
+	position: relative;
+	top: 4.6rem;
+	left: 2em;
+	background-color: var(--light-color);
+	z-index: 1; 
+	display: inline-block;
+	min-width: 482px;
+	min-height: 130px;
+}
+
+tbody .box-con td p {
+	padding: 35px 0 32px 0;
+	margin: 20px auto;
+	position: relative;
+	top: -0.3rem;
+	left: 0.1rem;
+	line-height: 4rem;
+	z-index: 2;
+	max-width: 84%;
+	min-height: 135px;
+    box-shadow: 1px 1px 20px -4px var(--light-color);
+	font-size: 3rem;
+	font-weight: bold;
+	border: none;
+	color: var(--primary-color);
+	background-color: var(--white-color);
+}
+
+tbody .btn-con td {
+	padding: 25px 0;
+	text-align: center;
+}
+
+tbody .btn-con td button {
+	padding: 19px 28px;
+	border-radius: 6px;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--fotter-color);
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+tbody .info-heading td {
+	text-align: center;
+	padding: 48px 0 15px 0;
+}
+
+tbody .info-heading td h2 {
+	font-size: 1.9rem;
+}
+
+
+tbody .info-data {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 100px 0px;
+}
+
+tbody .info-dataSpace {
+	padding-top: 13px;
+	padding-bottom: 20px;
+}
+
+tbody .info-data td {
+	min-height: 120px;
+	max-width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.15rem;
+	flex-direction: column;
+	background-color: var(--primary-color);
+}
+
+tbody .info-data td img {
+	max-width: 35%;
+}
+
+tbody .info-data td .img1 {
+	max-width: 28%;
+	padding-bottom: 8px;
+}
+
+tbody .info-data td p {
+	text-transform: uppercase;
+	color: var(--image-color);
+	font-size: 0.74rem;
+	font-weight: bold;
+}
+
+/* tbody .info-dataSpace {
+	padding-bottom: 20px;
+} */
+
+tbody .info-footer td {
+	text-align: center;
+	padding: 45px 0 35px 0;
+}
+
+tbody .info-footer td h3 {
+	font-size: 2rem;
+	padding-bottom: 12px;
+	word-spacing: 0.3rem;
+}
+
+
+tbody .info-footer td p {
+	font-size: 1.19rem;
+}
+
+tbody .info-footer td p a {
+	color: var(--link-clor);
+}
+
+tbody .info-footer td div {
+	margin: 0 auto;
+	padding: 18px 0;
+	/* border: 2px solid red; */
+}
+
+tbody .info-footer td div span {
+	background-color: var(--icon-box);
+	padding: 6.5px 6px;
+	margin: 0 3px;
+	border-radius: 5px;
+}
+
+tbody .info-footer td div span a i{
+	font-size: 1.11rem;
+}
+
+.fa-instagram {
+    position: relative;
+    left: 2px;
+}
+
+tfoot tr td {
+	background-color: var(--primary-color);
+	text-align: center;
+    padding: 35px 0 45px 0;
+}
+
+tfoot tr td p {
+	color: var(--fotter-color);
+	font-size: 0.9rem;
+}
+
+tfoot tr td .first-footer {
+	padding-top: 15px;
+}
+
+tfoot tr td .second-footer,
+tfoot tr td .third-footer,
+tfoot tr td .fifth-footer {
+	padding-top: 20px;
+}
+
+tfoot tr td .fourth-footer {
+	padding-top: 5px;
+}
+
+tfoot tr td .fifth-footer {
+	padding-bottom: 20px;
+}
+
+tfoot tr td .fifth-footer a {
+	text-decoration: none;
+	color: var(--fotter-color);
+}
+
+
+tfoot tr td h3 {
+	color: var(--image-color);
+	font-size: 1.05rem;
+	padding-bottom: 8px;
+}
+
+tfoot tr td div {
+	padding-top: 20px;
+}
+
+tfoot tr td div span {
+	border: 1px solid var(--white-color);
+	padding: 8px;
+	border-radius: 50%;
+	margin: 5px;
+}
